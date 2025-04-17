@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationship Visualization</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+</head>
+<body>
+    <div id="network"></div>
+
+    <form id="entityForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <select id="type" required>
+            <option value="" disabled selected>Select Type</option>
+            <option value="person">Person</option>
+            <option value="place">Place</option>
+            <option value="event">Event</option>
+        </select>
+        <textarea id="description" placeholder="Description"></textarea>
+        <button type="submit">Add Entity</button>
+    </form>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

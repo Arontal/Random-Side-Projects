@@ -1,0 +1,15 @@
+/* Set the body to use Flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+/* Set the size of the network container */
+#network {
+    flex: 1; /* Allow it to grow and fill available space */
+    width: 100%;
+    border: 1px solid lightgray;
+    overflow: auto; /* Allow scrolling if content overflows */
+} 
